@@ -1,0 +1,92 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "123",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alanandrusky@gmail.com",
+            "first_name": "Alan",
+            "last_name": "Andrusky",
+            "email": "alanandrusky@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-07-28T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "ehubert4545@gmail.com",
+            "first_name": "Elizabeth",
+            "last_name": "Andrusky",
+            "email": "ehubert4545@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-20T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Ihateyoudad@neworder.org",
+            "first_name": "Kylo",
+            "last_name": "Sven",
+            "email": "Ihateyoudad@neworder.org",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-21T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "alanandrosky@gmail.com",
+            "first_name": "Allen",
+            "last_name": "Androsky",
+            "email": "alanandrosky@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-24T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$qMRH8szID7Z8$Vljya2V3XfruOHuvx1hGz9ZyKg4bxbw7rc2WO0gTR7I=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "elizabeth.hubert@microsoft.com",
+            "first_name": "Elizabeth",
+            "last_name": "Andrusky",
+            "email": "elizabeth.hubert@microsoft.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-08-29T14:51:39.989Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

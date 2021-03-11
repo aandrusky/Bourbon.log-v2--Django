@@ -1,0 +1,434 @@
+[
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 1,
+        "fields": {
+            "flavor": 5,
+            "flavor_weight": 11,
+            "log": 19
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 2,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 13,
+            "log": 19
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 3,
+        "fields": {
+            "flavor": 7,
+            "flavor_weight": 23,
+            "log": 19
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 4,
+        "fields": {
+            "flavor": 8,
+            "flavor_weight": 5,
+            "log": 19
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 5,
+        "fields": {
+            "flavor": 1,
+            "flavor_weight": 48,
+            "log": 21
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 6,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 40,
+            "log": 21
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 7,
+        "fields": {
+            "flavor": 10,
+            "flavor_weight": 22,
+            "log": 21
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 8,
+        "fields": {
+            "flavor": 4,
+            "flavor_weight": 19,
+            "log": 21
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 9,
+        "fields": {
+            "flavor": 3,
+            "flavor_weight": 9,
+            "log": 21
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 10,
+        "fields": {
+            "flavor": 8,
+            "flavor_weight": 50,
+            "log": 21
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 11,
+        "fields": {
+            "flavor": 7,
+            "flavor_weight": 29,
+            "log": 21
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 12,
+        "fields": {
+            "flavor": 1,
+            "flavor_weight": 43,
+            "log": 22
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 13,
+        "fields": {
+            "flavor": 3,
+            "flavor_weight": 35,
+            "log": 22
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 14,
+        "fields": {
+            "flavor": 5,
+            "flavor_weight": 8,
+            "log": 22
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 15,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 20,
+            "log": 22
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 16,
+        "fields": {
+            "flavor": 7,
+            "flavor_weight": 44,
+            "log": 22
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 17,
+        "fields": {
+            "flavor": 10,
+            "flavor_weight": 4,
+            "log": 22
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 18,
+        "fields": {
+            "flavor": 1,
+            "flavor_weight": 39,
+            "log": 23
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 19,
+        "fields": {
+            "flavor": 2,
+            "flavor_weight": 25,
+            "log": 23
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 20,
+        "fields": {
+            "flavor": 3,
+            "flavor_weight": 57,
+            "log": 23
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 21,
+        "fields": {
+            "flavor": 4,
+            "flavor_weight": 72,
+            "log": 23
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 22,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 75,
+            "log": 23
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 23,
+        "fields": {
+            "flavor": 10,
+            "flavor_weight": 73,
+            "log": 23
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 24,
+        "fields": {
+            "flavor": 1,
+            "flavor_weight": 33,
+            "log": 24
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 25,
+        "fields": {
+            "flavor": 5,
+            "flavor_weight": 16,
+            "log": 24
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 26,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 5,
+            "log": 24
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 27,
+        "fields": {
+            "flavor": 4,
+            "flavor_weight": 13,
+            "log": 24
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 28,
+        "fields": {
+            "flavor": 3,
+            "flavor_weight": 17,
+            "log": 24
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 29,
+        "fields": {
+            "flavor": 8,
+            "flavor_weight": 24,
+            "log": 24
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 30,
+        "fields": {
+            "flavor": 10,
+            "flavor_weight": 8,
+            "log": 24
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 31,
+        "fields": {
+            "flavor": 1,
+            "flavor_weight": 52,
+            "log": 25
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 32,
+        "fields": {
+            "flavor": 3,
+            "flavor_weight": 23,
+            "log": 25
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 33,
+        "fields": {
+            "flavor": 5,
+            "flavor_weight": 12,
+            "log": 25
+        }
+    },
+    
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 34,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 45,
+            "log": 25
+            
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 35,
+        "fields": {
+            "flavor": 8,
+            "flavor_weight": 26,
+            "log": 25
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 36,
+        "fields": {
+            "flavor": 10,
+            "flavor_weight": 7,
+            "log": 25 
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 37,
+        "fields": {
+            "flavor": 5,
+            "flavor_weight": 26,
+            "log": 26
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 38,
+        "fields": {
+            "flavor": 7,
+            "flavor_weight": 40,
+            "log": 26
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 39,
+        "fields": {
+            "flavor": 1,
+            "flavor_weight": 36,
+            "log": 26
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 40,
+        "fields": {
+            "flavor": 3,
+            "flavor_weight": 31,
+            "log": 26
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 41,
+        "fields": {
+            "flavor": 2,
+            "flavor_weight": 39,
+            "log": 27
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 42,
+        "fields": {
+            "flavor": 4,
+            "flavor_weight": 66,
+            "log": 27
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 44,
+        "fields": {
+            "flavor": 6,
+            "flavor_weight": 29,
+            "log": 27
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 44,
+        "fields": {
+            "flavor": 8,
+            "flavor_weight": 66,
+            "log": 27 
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 45,
+        "fields": {
+            "flavor": 9,
+            "flavor_weight": 51,
+            "log": 27
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavorsums",
+        "pk": 46,
+        "fields": {
+            "flavor": 9,
+            "flavor_weight": 51,
+            "log": 27
+        }
+    }
+]

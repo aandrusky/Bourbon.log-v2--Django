@@ -1,0 +1,72 @@
+[
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 1,
+        "fields": {
+            "flavor": "Fruit"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 2,
+        "fields": {
+            "flavor": "Floral"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 3,
+        "fields": {
+            "flavor": "Oak"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 4,
+        "fields": {
+            "flavor": "Nuts"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 5,
+        "fields": {
+            "flavor": "Spicy"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 6,
+        "fields": {
+            "flavor": "Maple"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 7,
+        "fields": {
+            "flavor": "Sweet"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 8,
+        "fields": {
+            "flavor": "Bread"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 9,
+        "fields": {
+            "flavor": "Earthy"
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.flavors",
+        "pk": 10,
+        "fields": {
+            "flavor": "Grain"
+        }
+    }
+]
