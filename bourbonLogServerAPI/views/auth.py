@@ -54,13 +54,13 @@ def register_user(request):
         username=req_body['username'],
         email=req_body['email'],
         password=req_body['password'],
-        first_name=req_body['first_name'],
-        last_name=req_body['last_name']
+        # first_name=req_body['first_name'],
+        # last_name=req_body['last_name']
     )
 
     # Now save the extra info in the bourbonLogServerAPI_logger table
     logger = Logger.objects.create(
-        bio=req_body['bio'],
+        # bio=req_body['bio'],
         user=new_user
     )
 
