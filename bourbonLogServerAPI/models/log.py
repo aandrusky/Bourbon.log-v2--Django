@@ -2,7 +2,7 @@ from django.db import models
 
 class Log(models.Model):
 
-    user = models.ForeignKey("User", on_delete=models.CASCADE)
+    logger = models.ForeignKey("Logger", on_delete=models.CASCADE)
     recordCreation = models.DateField(default="0000-00-00",)
     bourbonName = models.CharField(max_length=50)
     distiller = models.CharField(max_length=50)

@@ -1,6 +1,6 @@
 [
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 1,
         "fields": {
             "flavor": 5,
@@ -9,7 +9,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 2,
         "fields": {
             "flavor": 6,
@@ -19,7 +19,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 3,
         "fields": {
             "flavor": 7,
@@ -29,7 +29,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 4,
         "fields": {
             "flavor": 8,
@@ -38,7 +38,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 5,
         "fields": {
             "flavor": 1,
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 6,
         "fields": {
             "flavor": 6,
@@ -57,7 +57,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 7,
         "fields": {
             "flavor": 10,
@@ -67,7 +67,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 8,
         "fields": {
             "flavor": 4,
@@ -77,7 +77,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 9,
         "fields": {
             "flavor": 3,
@@ -86,7 +86,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 10,
         "fields": {
             "flavor": 8,
@@ -95,7 +95,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 11,
         "fields": {
             "flavor": 7,
@@ -105,7 +105,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 12,
         "fields": {
             "flavor": 1,
@@ -115,7 +115,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 13,
         "fields": {
             "flavor": 3,
@@ -124,7 +124,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 14,
         "fields": {
             "flavor": 5,
@@ -133,7 +133,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 15,
         "fields": {
             "flavor": 6,
@@ -143,7 +143,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 16,
         "fields": {
             "flavor": 7,
@@ -153,7 +153,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 17,
         "fields": {
             "flavor": 10,
@@ -162,7 +162,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 18,
         "fields": {
             "flavor": 1,
@@ -172,7 +172,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 19,
         "fields": {
             "flavor": 2,
@@ -181,7 +181,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 20,
         "fields": {
             "flavor": 3,
@@ -190,7 +190,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 21,
         "fields": {
             "flavor": 4,
@@ -200,7 +200,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 22,
         "fields": {
             "flavor": 6,
@@ -210,7 +210,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 23,
         "fields": {
             "flavor": 10,
@@ -219,7 +219,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 24,
         "fields": {
             "flavor": 1,
@@ -229,7 +229,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 25,
         "fields": {
             "flavor": 5,
@@ -238,7 +238,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 26,
         "fields": {
             "flavor": 6,
@@ -247,7 +247,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 27,
         "fields": {
             "flavor": 4,
@@ -257,7 +257,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 28,
         "fields": {
             "flavor": 3,
@@ -267,7 +267,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 29,
         "fields": {
             "flavor": 8,
@@ -276,7 +276,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 30,
         "fields": {
             "flavor": 10,
@@ -286,7 +286,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 31,
         "fields": {
             "flavor": 1,
@@ -295,7 +295,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 32,
         "fields": {
             "flavor": 3,
@@ -304,7 +304,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 33,
         "fields": {
             "flavor": 5,
@@ -314,7 +314,7 @@
     },
     
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 34,
         "fields": {
             "flavor": 6,
@@ -324,7 +324,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 35,
         "fields": {
             "flavor": 8,
@@ -333,7 +333,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 36,
         "fields": {
             "flavor": 10,
@@ -342,7 +342,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 37,
         "fields": {
             "flavor": 5,
@@ -351,7 +351,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 38,
         "fields": {
             "flavor": 7,
@@ -360,7 +360,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 39,
         "fields": {
             "flavor": 1,
@@ -369,7 +369,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 40,
         "fields": {
             "flavor": 3,
@@ -378,7 +378,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 41,
         "fields": {
             "flavor": 2,
@@ -387,7 +387,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 42,
         "fields": {
             "flavor": 4,
@@ -396,7 +396,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 44,
         "fields": {
             "flavor": 6,
@@ -405,7 +405,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 44,
         "fields": {
             "flavor": 8,
@@ -414,7 +414,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 45,
         "fields": {
             "flavor": 9,
@@ -423,7 +423,7 @@
         }
     },
     {
-        "model": "bourbonLogServerAPI.flavorsums",
+        "model": "bourbonLogServerAPI.flavorsum",
         "pk": 46,
         "fields": {
             "flavor": 9,
