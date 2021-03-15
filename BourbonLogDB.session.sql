@@ -1,1 +1,1 @@
-SELECT * FROM auth_user;
+SELECT * FROM bourbonLogServerAPI_log;

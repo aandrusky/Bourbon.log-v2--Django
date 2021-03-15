@@ -26,15 +26,16 @@ class LogView(ViewSet):
         # body of the request from the client.
         log = Log()
         
-        log.recordCreation = request.data["recordCreation"]
-        log.bourbonName = request.data["bourbonName"]
+        log.bourbon_name = request.data["bourbonName"]
         log.distiller = request.data["distiller"]
         log.proof = request.data["proof"]
+        log.price = request.data["price"]
         log.age = request.data["age"]
-        log.batchNum = request.data["batchNum"]
+        log.batch_num = request.data["batchNum"]
         log.owned = request.data["owned"]
         log.rating = request.data["rating"]
-        log.post_image_url = request.data["post_image_url"]
+        log.notes = request.data["notes"]
+        log.post_image_url = request.data["postImageUrl"]
         log.logger = logger
 
         # Try to save the new log to the database, then
@@ -83,15 +84,16 @@ class LogView(ViewSet):
         # creating a new instance of Log, get the log record
         # from the database whose primary key is `pk`
         log = Log.objects.get(pk=pk)
-        log.recordCreation = request.data["recordCreation"]
-        log.bourbonName = request.data["bourbonName"]
+        log.bourbon_name = request.data["bourbonName"]
         log.distiller = request.data["distiller"]
         log.proof = request.data["proof"]
+        log.price = request.data["price"]
         log.age = request.data["age"]
-        log.batchNum = request.data["batchNum"]
+        log.batch_num = request.data["batchNum"]
         log.owned = request.data["owned"]
         log.rating = request.data["rating"]
-        log.post_image_url = request.data["post_image_url"]
+        log.notes = request.data["notes"]
+        log.post_image_url = request.data["postImageUrl"]
         log.logger = logger
 
         log.save()
@@ -139,7 +141,7 @@ class LogSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Log
-        fields = ('id', 'logger', 'recordCreation', 'bourbonName','distiller', 'proof',
-        'age', 'batchNum', 'owned','rating', 'post_image_url'
+        fields = ('id', 'logger', 'bourbon_name','distiller', 'proof',
+        'age', 'batch_num', 'owned','rating', 'post_image_url'
         )
         depth = 1

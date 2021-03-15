@@ -3,8 +3,7 @@
         "model": "bourbonLogServerAPI.log",
         "pk": 1,
         "fields": {
-            "user": 2,
-            "record_creation": "2019-12-11",
+            "logger": 2,
             "bourbon_name": "Elijah Craig Barrel Proof",
             "distiller": "Heaven Hill Distillery",
             "proof": "122.2",
@@ -12,7 +11,7 @@
             "batch_num": "B519",
             "owned": true,
             "rating": "9/10",
-            "photo": ""
+            "post_image_url": ""
         }
     },
     {
@@ -24,7 +23,7 @@
             "proof": "98.6",
             "age": "28",
             "batch_num": "4395",
-            "user": 5
+            "logger": 5
         }
     },
     {
@@ -39,7 +38,7 @@
             "owned": "",
             "price": "35",
             "rating": "8/10",
-            "user": 5
+            "logger": 5
         }
     },
     {
@@ -54,7 +53,7 @@
             "price": "55",
             "notes": "This is delicious",
             "rating": "10",
-            "user": 5
+            "logger": 5
         }
     },
     {
@@ -68,7 +67,7 @@
             "batch_num": "2020",
             "price": "129.99",
             "notes": "Expressly produced according to the exclusive Van Winkle family wheated-recipe and specially selected from barrels in the heart of the aging warehouses, this bourbon remained undisturbed for 15 years to age in deep-charred heavy oak untouched by human hands, unhurried by time.",
-            "user": 5
+            "logger": 5
         }
     },
     {
@@ -84,12 +83,12 @@
             "price": "50",
             "notes": "This is great",
             "rating": "10/10",
-            "user": 5
+            "logger": 5
         }
     },
     {
         "model": "bourbonLogServerAPI.log",
-        "pk": 6,
+        "pk": 7,
         "fields": {
             "bourbon_name": "Henry McKenna Bottled-in-Bond",
             "distiller": "Heaven Hill",
@@ -99,12 +98,12 @@
             "price": "45",
             "notes": "This was just ok for me. not great, not terrible. But it's a single barrel, so it could vary. ",
             "rating": "7/10",
-            "user": 1
+            "logger": 1
         }
     },
     {
         "model": "bourbonLogServerAPI.log",
-        "pk": 6,
+        "pk": 8,
         "fields": {
             "bourbon_name": "Stagg Jr.",
             "distiller": "Buffalo Trace",
@@ -114,12 +113,12 @@
             "price": "65",
             "notes": "Excellent, tastes like a maple pie",
             "rating": "10/10",
-            "user": 1
+            "logger": 1
         }
     },
     {
         "model": "bourbonLogServerAPI.log",
-        "pk": 7,
+        "pk": 9,
         "fields": {
             "bourbon_name": "Weller Antique",
             "distiller": "Buffalo Trace",
@@ -129,12 +128,12 @@
             "price": "50",
             "notes": "Weller Antique 107 is a crowd pleaser - full-flavored, balanced, and a fair deal if you happen to get lucky and find it at its new MSRP.",
             "rating": "8/10",
-            "user": 1
+            "logger": 1
         }
     },
     {
         "model": "bourbonLogServerAPI.log",
-        "pk": 7,
+        "pk": 10,
         "fields": {
             "bourbon_name": "BethAnnWhiskey",
             "distiller": "BethAnn",
@@ -144,7 +143,7 @@
             "price": "1000000",
             "notes": "poo",
             "rating": "2",
-            "user": 6
+            "logger": 5
         }
     }
 ]

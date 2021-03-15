@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
-from bourbonLogServerAPI.views import register_user, login_user
+from bourbonLogServerAPI.views import register_user, login_user, LogView
 
 router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'logs', LogView, 'log')
+
 
 urlpatterns = [
     path('', include(router.urls)),

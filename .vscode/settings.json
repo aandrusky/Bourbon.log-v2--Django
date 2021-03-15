@@ -7,5 +7,6 @@
             "name": "BourbonLogDB",
             "database": "db.sqlite3"
         }
-    ]
+    ],
+    "python.pythonPath": "/home/alanandrusky/.local/share/virtualenvs/bourbon-log-server-CJYMYuMH/bin/python"
 }
