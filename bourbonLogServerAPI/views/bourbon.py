@@ -141,7 +141,7 @@ class LogSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Log
-        fields = ('id', 'logger', 'bourbon_name','distiller', 'proof',
-        'age', 'batch_num', 'owned','rating', 'post_image_url'
+        fields = ('id', 'logger', 'bourbon_name','distiller', 'proof', 'price',
+        'age', 'batch_num', 'notes', 'owned','rating', 'post_image_url'
         )
         depth = 1
