@@ -19,7 +19,7 @@ class LogView(ViewSet):
         """
 
         # Uses the token passed in the `Authorization` header
-        logger = Logger.objects.get(user=request.auth.user)
+        logger = Logger.objects.get(user=request.auth.user) 
 
         # Create a new Python instance of the Log class
         # and set its properties from what was sent in the
