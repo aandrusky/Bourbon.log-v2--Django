@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintEnabled": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "BourbonLogDB",
+            "database": "db.sqlite3"
+        }
+    ],
+    "python.pythonPath": "/home/alanandrusky/.local/share/virtualenvs/bourbon-log-server-CJYMYuMH/bin/python"
+}

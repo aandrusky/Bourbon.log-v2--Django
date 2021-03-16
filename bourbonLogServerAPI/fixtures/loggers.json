@@ -1,0 +1,37 @@
+[
+    {
+        "model": "bourbonLogServerAPI.logger",
+        "pk": 1,
+        "fields": {
+           "user": 1
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.logger",
+        "pk": 2,
+        "fields": {
+           "user": 2
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.logger",
+        "pk": 3,
+        "fields": {
+            "user": 3
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.logger",
+        "pk": 4,
+        "fields": {
+            "user": 4
+        }
+    },
+    {
+        "model": "bourbonLogServerAPI.logger",
+        "pk": 5,
+        "fields": {
+            "user": 5
+        }
+    }
+]
