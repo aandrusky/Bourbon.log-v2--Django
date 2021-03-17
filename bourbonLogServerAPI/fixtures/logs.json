@@ -9,7 +9,6 @@
             "proof": "122.2",
             "age": "12 years",
             "batch_num": "B519",
-            "owned": true,
             "rating": "9/10",
             "post_image_url": ""
         }
@@ -35,7 +34,6 @@
             "proof": "90",
             "age": "10",
             "batch_num": "n/a",
-            "owned": "",
             "price": "35",
             "rating": "8/10",
             "logger": 5
@@ -79,7 +77,6 @@
             "proof": "100",
             "age": "6 months",
             "batch_num": "44",
-            "owned": "",
             "price": "50",
             "notes": "This is great",
             "rating": "10/10",

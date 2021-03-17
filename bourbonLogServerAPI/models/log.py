@@ -9,7 +9,7 @@ class Log(models.Model):
     proof = models.CharField(max_length=50)
     age = models.CharField(max_length=50)
     batch_num = models.CharField(max_length=50)
-    owned = models.CharField(max_length=50)                 #<-make this customer property. reference JOINED in levelup events?
+    # owned = models.CharField(max_length=50)                 <-make this customer property. reference JOINED in levelup events?
     rating = models.CharField(max_length=50)
     notes = models.CharField(max_length=200)
     post_image_url = models.CharField(max_length=200)       #<-do this differently. Open from local folder. Users don't want to paste url's

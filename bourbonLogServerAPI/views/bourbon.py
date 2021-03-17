@@ -32,7 +32,6 @@ class LogView(ViewSet):
         log.price = request.data["price"]
         log.age = request.data["age"]
         log.batch_num = request.data["batchNum"]
-        log.owned = request.data["owned"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
         log.post_image_url = request.data["postImageUrl"]
@@ -90,7 +89,6 @@ class LogView(ViewSet):
         log.price = request.data["price"]
         log.age = request.data["age"]
         log.batch_num = request.data["batchNum"]
-        log.owned = request.data["owned"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
         log.post_image_url = request.data["postImageUrl"]
@@ -126,16 +124,15 @@ class LogView(ViewSet):
         Returns:
             Response -- JSON serialized list of logs
         """
-        user = (self.request.query_params.get('logId', None))
+        #get all logs for a single logger. Gets all logs, but does it according to the user and 
+        #is set to the user_id value found in the model
+        user = (self.request.query_params.get('userId', None))
 
-        if user is not None:
-            log = Log.objects.filter(user_id = user)
-        else:
-            log = Log.objects.all()
+        logs = Log.objects.filter(logger = user)
 
 
         serializer = LogSerializer(
-            log, many=True, context={'request': request})
+            logs, many=True, context={'request': request})
         return Response(serializer.data)
 
 class LogSerializer(serializers.ModelSerializer):
@@ -147,6 +144,6 @@ class LogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Log
         fields = ('id', 'logger', 'bourbon_name','distiller', 'proof', 'price',
-        'age', 'batch_num', 'notes', 'owned','rating', 'post_image_url'
+        'age', 'batch_num', 'notes','rating', 'post_image_url'
         )
         depth = 1

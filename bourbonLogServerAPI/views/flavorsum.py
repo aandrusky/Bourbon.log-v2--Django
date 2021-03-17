@@ -58,13 +58,14 @@ class FlavorSumView(ViewSet):
 
         
         #gets value of logId in qsp, stores in 'log' -- might need to parse into integer?
-        log = (self.request.query_params.get('logId', None))    #is log actually getting a number?
-
+        log = (self.request.query_params.get('logId', None))    
+        print(self.request.query_params.get('logId', None))
+        print(type(log))
         #if a log exists, 
         if log is not None:
             #get all flavors for a single log entry. Gets all flavorsums, but does it according to the number that was found above, and 
             #is set to the log_id value found in the model
-            flavorsums = FlavorSum.objects.filter(log_id = log)
+            flavorsums = FlavorSum.objects.filter(log_id = int(log))
 
         else:
             flavorsums = FlavorSum.objects.all()
