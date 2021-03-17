@@ -5,7 +5,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from bourbonLogServerAPI.models import FlavorSum, Flavor, Log
+from bourbonLogServerAPI.models import FlavorSum
 
 
 class FlavorSumView(ViewSet):
@@ -29,14 +29,6 @@ class FlavorSumView(ViewSet):
         # body of the request from the client.
 
         flavorsum = FlavorSum()
-
-        # flavor = Flavor.objects.get(request.data["flavor"])
-        # flavorsum.flavor = flavor
-
-        # log = Log.objects.get(request.data["log"])
-        # flavorsum.log = log
-        
-        # flavorsum.flavor_weight = request.data["flavorWeight"]
 
 
         flavorsum.flavor_id = request.data["flavor"]

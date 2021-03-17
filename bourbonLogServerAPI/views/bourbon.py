@@ -126,8 +126,13 @@ class LogView(ViewSet):
         Returns:
             Response -- JSON serialized list of logs
         """
-        # Get all log records from the database
-        log = Log.objects.all()
+        user = (self.request.query_params.get('logId', None))
+
+        if user is not None:
+            log = Log.objects.filter(user_id = user)
+        else:
+            log = Log.objects.all()
+
 
         serializer = LogSerializer(
             log, many=True, context={'request': request})
