@@ -1,11 +1,12 @@
 """View module for handling requests about logs"""
+from bourbonLogServerAPI.models.flavor import Flavor
 from django.core.exceptions import ValidationError
 from rest_framework import status
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from bourbonLogServerAPI.models import FlavorSum
+from bourbonLogServerAPI.models import FlavorSum, Log, Flavor
 
 
 class FlavorSumView(ViewSet):
@@ -21,19 +22,22 @@ class FlavorSumView(ViewSet):
             Response -- JSON serialized flavorsum instance
         """
 
-        # Uses the token passed in the `Authorization` header
-        # logger = Logger.objects.get(user=request.auth.user)..
-
         # Create a new Python instance of the Log class
         # and set its properties from what was sent in the
         # body of the request from the client.
 
         flavorsum = FlavorSum()
 
+        flavorsum.flavor_weight = request.data["flavorweight"]
 
-        flavorsum.flavor_id = request.data["flavor"]
-        flavorsum.log_id = request.data["log"]
-        flavorsum.flavor_weight = request.data["flavorWeight"]
+        flavor = Flavor.objects.get(pk=request.data["flavorId"])
+        flavorsum.flavor = flavor
+
+        log = Log.objects.get(pk=request.data["logId"])
+        flavorsum.log = log
+
+
+
 
         # Try to save the new log to the database, then
         # serialize the log instance as JSON, and send the
