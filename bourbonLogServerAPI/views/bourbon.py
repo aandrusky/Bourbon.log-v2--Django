@@ -59,6 +59,8 @@ class LogView(ViewSet):
         Returns:
             Response -- JSON serialized log instance
         """
+        logger = Logger.objects.get(user=request.auth.user)
+
         try:
             # `pk` is a parameter to this function, and
             # Django parses it from the URL route parameter
@@ -106,7 +108,7 @@ class LogView(ViewSet):
         Returns:
             Response -- 200, 404, or 500 status code
         """
-
+        logger = Logger.objects.get(user=request.auth.user)
 
         try:
             log = Log.objects.get(pk=pk)
@@ -128,11 +130,9 @@ class LogView(ViewSet):
         """
         #get all logs for a single logger. Gets all logs, but does it according to the user and 
         #is set to the user_id value found in the model
-        
 
-        user = (self.request.query_params.get('userId', None))
 
-        logs = Log.objects.filter(logger = user)
+        logs = Log.objects.filter(logger__user=request.auth.user)
 
 
         serializer = LogSerializer(
