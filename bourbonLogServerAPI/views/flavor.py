@@ -20,6 +20,7 @@ class FlavorView(ViewSet):
         # Get all log records from the database
         flavor = Flavor.objects.all()
 
+
         serializer = FlavorSerializer(
             flavor, many=True, context={'request': request})
         return Response(serializer.data)

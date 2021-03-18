@@ -34,7 +34,7 @@ class LogView(ViewSet):
         log.batch_num = request.data["batchNum"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
-        log.post_image_url = request.data["postImageUrl"]
+        # log.post_image_url = request.data["postImageUrl"]
         log.logger = logger
 
         # Try to save the new log to the database, then
@@ -91,7 +91,7 @@ class LogView(ViewSet):
         log.batch_num = request.data["batchNum"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
-        log.post_image_url = request.data["postImageUrl"]
+        # log.post_image_url = request.data["postImageUrl"]
         log.logger = logger
 
         log.save()
@@ -106,6 +106,8 @@ class LogView(ViewSet):
         Returns:
             Response -- 200, 404, or 500 status code
         """
+
+
         try:
             log = Log.objects.get(pk=pk)
             log.delete()
@@ -126,6 +128,8 @@ class LogView(ViewSet):
         """
         #get all logs for a single logger. Gets all logs, but does it according to the user and 
         #is set to the user_id value found in the model
+        
+
         user = (self.request.query_params.get('userId', None))
 
         logs = Log.objects.filter(logger = user)
@@ -144,6 +148,6 @@ class LogSerializer(serializers.ModelSerializer):
     class Meta:
         model = Log
         fields = ('id', 'logger', 'bourbon_name','distiller', 'proof', 'price',
-        'age', 'batch_num', 'notes','rating', 'post_image_url'
+        'age', 'batch_num', 'notes','rating'
         )
         depth = 1
