@@ -59,7 +59,6 @@ class LogView(ViewSet):
         Returns:
             Response -- JSON serialized log instance
         """
-        logger = Logger.objects.get(user=request.auth.user)
 
         try:
             # `pk` is a parameter to this function, and
@@ -68,6 +67,7 @@ class LogView(ViewSet):
             #
             # The `2` at the end of the route becomes `pk`
             log = Log.objects.get(pk=pk)
+            
             serializer = LogSerializer(log, context={'request': request})
             return Response(serializer.data)
         except Exception as ex:
@@ -108,7 +108,6 @@ class LogView(ViewSet):
         Returns:
             Response -- 200, 404, or 500 status code
         """
-        logger = Logger.objects.get(user=request.auth.user)
 
         try:
             log = Log.objects.get(pk=pk)
