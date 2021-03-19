@@ -26,15 +26,15 @@ class LogView(ViewSet):
         # body of the request from the client.
         log = Log()
         
-        log.bourbon_name = request.data["bourbonName"]
+        log.bourbon_name = request.data["bourbon_name"]
         log.distiller = request.data["distiller"]
         log.proof = request.data["proof"]
         log.price = request.data["price"]
         log.age = request.data["age"]
-        log.batch_num = request.data["batchNum"]
+        log.batch_num = request.data["batch_num"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
-        # log.post_image_url = request.data["postImageUrl"]
+        log.owned = request.data["owned"]
         log.logger = logger
 
         # Try to save the new log to the database, then
@@ -85,15 +85,15 @@ class LogView(ViewSet):
         # creating a new instance of Log, get the log record
         # from the database whose primary key is `pk`
         log = Log.objects.get(pk=pk)
-        log.bourbon_name = request.data["bourbonName"]
+        log.bourbon_name = request.data["bourbon_name"]
         log.distiller = request.data["distiller"]
         log.proof = request.data["proof"]
         log.price = request.data["price"]
         log.age = request.data["age"]
-        log.batch_num = request.data["batchNum"]
+        log.batch_num = request.data["batch_num"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
-        # log.post_image_url = request.data["postImageUrl"]
+        log.owned = request.data["owned"]
         log.logger = logger
 
         log.save()
@@ -137,6 +137,7 @@ class LogView(ViewSet):
         serializer = LogSerializer(
             logs, many=True, context={'request': request})
         return Response(serializer.data)
+        
 
 class LogSerializer(serializers.ModelSerializer):
     """JSON serializer for logs
@@ -146,7 +147,7 @@ class LogSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Log
-        fields = ('id', 'logger', 'bourbon_name','distiller', 'proof', 'price',
+        fields = ('id', 'logger', 'bourbon_name','distiller', 'owned', 'proof', 'price',
         'age', 'batch_num', 'notes','rating'
         )
         depth = 1
