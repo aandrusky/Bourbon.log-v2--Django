@@ -1,6 +1,6 @@
 """View module for handling requests about logs"""
 from bourbonLogServerAPI.models.flavor import Flavor
-from django.core.exceptions import ValidationError
+from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from rest_framework import status
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
@@ -26,17 +26,32 @@ class FlavorSumView(ViewSet):
         # and set its properties from what was sent in the
         # body of the request from the client.
 
-        flavorsum = FlavorSum()
-
-        flavorsum.flavor_weight = request.data["flavorweight"]
-
         flavor = Flavor.objects.get(pk=request.data["flavorId"])
-        flavorsum.flavor = flavor
-
         log = Log.objects.get(pk=request.data["logId"])
-        flavorsum.log = log
 
+        try:
 
+            found_flavorsum = FlavorSum.objects.get(flavor = flavor, log = log)
+
+            found_flavorsum.delete()
+            
+            flavorsum = FlavorSum()
+
+            flavorsum.flavor_weight = request.data["flavorweight"]
+
+            flavorsum.flavor = flavor
+
+            flavorsum.log = log
+
+        except ObjectDoesNotExist as ex:
+
+            flavorsum = FlavorSum()
+
+            flavorsum.flavor_weight = request.data["flavorweight"]
+
+            flavorsum.flavor = flavor
+
+            flavorsum.log = log
 
 
         # Try to save the new log to the database, then
