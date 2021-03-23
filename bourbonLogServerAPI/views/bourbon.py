@@ -26,16 +26,15 @@ class LogView(ViewSet):
         # body of the request from the client.
         log = Log()
         
-        log.bourbon_name = request.data["bourbonName"]
+        log.bourbon_name = request.data["bourbon_name"]
         log.distiller = request.data["distiller"]
         log.proof = request.data["proof"]
         log.price = request.data["price"]
         log.age = request.data["age"]
-        log.batch_num = request.data["batchNum"]
-        log.owned = request.data["owned"]
+        log.batch_num = request.data["batch_num"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
-        log.post_image_url = request.data["postImageUrl"]
+        log.owned = request.data["owned"]
         log.logger = logger
 
         # Try to save the new log to the database, then
@@ -60,6 +59,7 @@ class LogView(ViewSet):
         Returns:
             Response -- JSON serialized log instance
         """
+
         try:
             # `pk` is a parameter to this function, and
             # Django parses it from the URL route parameter
@@ -67,6 +67,7 @@ class LogView(ViewSet):
             #
             # The `2` at the end of the route becomes `pk`
             log = Log.objects.get(pk=pk)
+            
             serializer = LogSerializer(log, context={'request': request})
             return Response(serializer.data)
         except Exception as ex:
@@ -84,16 +85,15 @@ class LogView(ViewSet):
         # creating a new instance of Log, get the log record
         # from the database whose primary key is `pk`
         log = Log.objects.get(pk=pk)
-        log.bourbon_name = request.data["bourbonName"]
+        log.bourbon_name = request.data["bourbon_name"]
         log.distiller = request.data["distiller"]
         log.proof = request.data["proof"]
         log.price = request.data["price"]
         log.age = request.data["age"]
-        log.batch_num = request.data["batchNum"]
-        log.owned = request.data["owned"]
+        log.batch_num = request.data["batch_num"]
         log.rating = request.data["rating"]
         log.notes = request.data["notes"]
-        log.post_image_url = request.data["postImageUrl"]
+        log.owned = request.data["owned"]
         log.logger = logger
 
         log.save()
@@ -108,6 +108,7 @@ class LogView(ViewSet):
         Returns:
             Response -- 200, 404, or 500 status code
         """
+
         try:
             log = Log.objects.get(pk=pk)
             log.delete()
@@ -126,12 +127,17 @@ class LogView(ViewSet):
         Returns:
             Response -- JSON serialized list of logs
         """
-        # Get all log records from the database
-        log = Log.objects.all()
+        #get all logs for a single logger. Gets all logs, but does it according to the user and 
+        #is set to the user_id value found in the model
+
+
+        logs = Log.objects.filter(logger__user=request.auth.user)
+
 
         serializer = LogSerializer(
-            log, many=True, context={'request': request})
+            logs, many=True, context={'request': request})
         return Response(serializer.data)
+        
 
 class LogSerializer(serializers.ModelSerializer):
     """JSON serializer for logs
@@ -141,7 +147,7 @@ class LogSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Log
-        fields = ('id', 'logger', 'bourbon_name','distiller', 'proof', 'price',
-        'age', 'batch_num', 'notes', 'owned','rating', 'post_image_url'
+        fields = ('id', 'logger', 'bourbon_name','distiller', 'owned', 'proof', 'price',
+        'age', 'batch_num', 'notes','rating'
         )
         depth = 1

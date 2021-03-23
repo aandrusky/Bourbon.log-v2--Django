@@ -1,11 +1,12 @@
 """View module for handling requests about logs"""
-from django.core.exceptions import ValidationError
+from bourbonLogServerAPI.models.flavor import Flavor
+from django.core.exceptions import ObjectDoesNotExist, ValidationError
 from rest_framework import status
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
-from bourbonLogServerAPI.models import FlavorSum, Flavor, Log
+from bourbonLogServerAPI.models import FlavorSum, Log, Flavor
 
 
 class FlavorSumView(ViewSet):
@@ -21,27 +22,37 @@ class FlavorSumView(ViewSet):
             Response -- JSON serialized flavorsum instance
         """
 
-        # Uses the token passed in the `Authorization` header
-        # logger = Logger.objects.get(user=request.auth.user)..
-
         # Create a new Python instance of the Log class
         # and set its properties from what was sent in the
         # body of the request from the client.
 
-        flavorsum = FlavorSum()
+        flavor = Flavor.objects.get(pk=request.data["flavorId"])
+        log = Log.objects.get(pk=request.data["logId"])
 
-        # flavor = Flavor.objects.get(request.data["flavor"])
-        # flavorsum.flavor = flavor
+        try:
 
-        # log = Log.objects.get(request.data["log"])
-        # flavorsum.log = log
-        
-        # flavorsum.flavor_weight = request.data["flavorWeight"]
+            found_flavorsum = FlavorSum.objects.get(flavor = flavor, log = log)
 
+            found_flavorsum.delete()
+            
+            flavorsum = FlavorSum()
 
-        flavorsum.flavor_id = request.data["flavor"]
-        flavorsum.log_id = request.data["log"]
-        flavorsum.flavor_weight = request.data["flavorWeight"]
+            flavorsum.flavor_weight = request.data["flavorweight"]
+
+            flavorsum.flavor = flavor
+
+            flavorsum.log = log
+
+        except ObjectDoesNotExist as ex:
+
+            flavorsum = FlavorSum()
+
+            flavorsum.flavor_weight = request.data["flavorweight"]
+
+            flavorsum.flavor = flavor
+
+            flavorsum.log = log
+
 
         # Try to save the new log to the database, then
         # serialize the log instance as JSON, and send the
@@ -66,13 +77,13 @@ class FlavorSumView(ViewSet):
 
         
         #gets value of logId in qsp, stores in 'log' -- might need to parse into integer?
-        log = (self.request.query_params.get('logId', None))    #is log actually getting a number?
-
+        log = (self.request.query_params.get('logId', None))    
+        
         #if a log exists, 
         if log is not None:
             #get all flavors for a single log entry. Gets all flavorsums, but does it according to the number that was found above, and 
             #is set to the log_id value found in the model
-            flavorsums = FlavorSum.objects.filter(log_id = log)
+            flavorsums = FlavorSum.objects.filter(log_id = int(log))
 
         else:
             flavorsums = FlavorSum.objects.all()
