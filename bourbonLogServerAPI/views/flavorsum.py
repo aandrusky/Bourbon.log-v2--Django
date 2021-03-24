@@ -34,7 +34,7 @@ class FlavorSumView(ViewSet):
             found_flavorsum = FlavorSum.objects.get(flavor = flavor, log = log)
 
             found_flavorsum.delete()
-            
+                       
             flavorsum = FlavorSum()
 
             flavorsum.flavor_weight = request.data["flavorweight"]
