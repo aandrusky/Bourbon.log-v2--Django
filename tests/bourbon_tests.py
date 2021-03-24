@@ -1,7 +1,7 @@
 import json
 from rest_framework import status
 from rest_framework.test import APITestCase
-from bourbonLogServerAPI.models import Log, Logger
+from bourbonLogServerAPI.models import Log
 
 
 class BourbonTests(APITestCase):

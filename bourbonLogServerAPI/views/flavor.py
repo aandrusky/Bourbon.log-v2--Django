@@ -6,6 +6,8 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from bourbonLogServerAPI.models import Flavor
+from rest_framework import status
+
 
 
 class FlavorView(ViewSet):
@@ -23,7 +25,7 @@ class FlavorView(ViewSet):
 
         serializer = FlavorSerializer(
             flavor, many=True, context={'request': request})
-        return Response(serializer.data)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 class FlavorSerializer(serializers.ModelSerializer):
     """JSON serializer for logs
