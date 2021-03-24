@@ -73,4 +73,34 @@ class FlavorSumTests(APITestCase):
         
         self.assertEqual(json_response["flavor_weight"], 50)
         
-       
+    def test_get_all_flavors(self):
+        """
+        Ensure we can get a collection of products.
+        """
+
+        flavorsum = FlavorSum()
+        flavorsum.flavor_id = 1
+        flavorsum.flavor_weight = 40
+        flavorsum.log_id = 1
+        flavorsum.save()
+
+        flavorsum = FlavorSum()
+        flavorsum.flavor_id = 1
+        flavorsum.flavor_weight = 50
+        flavorsum.log_id = 1
+        flavorsum.save()
+
+        flavorsum = FlavorSum()
+        flavorsum.flavor_id = 1
+        flavorsum.flavor_weight = 60
+        flavorsum.log_id = 1
+        flavorsum.save()
+        
+
+        url = "/flavorsums"
+
+        self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token)
+        response = self.client.get(url, None, format='json')
+        json_response = json.loads(response.content)  
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(json_response), 3)
